@@ -1,0 +1,110 @@
+<!-- Activar el css para poder ver bien los cambios (enlace en head) -->
+<!DOCTYPE html> <!--ReqH1-->
+<html lang="es-ES">
+    <head> <!--ReqH2-->
+        <title>JavaScript behind the scenes</title>
+        <meta charset="UTF-8">
+        <meta name="author">
+        <meta name="description">
+        <meta name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body> <!--ReqH3-->
+        <nav> <!--ReqH8-->
+            <ul> <!--ReqH14--> <!--ReqH9-->
+                <li><a href="https://medium.com/@ignatovich.dm/the-javascript-event-loop-explained-with-examples-d8f7ddf0861d" target="_blank">Posible información para la página</a></li>
+                <li><a href="./pages/extra.html" target="_self">Página extra</a></li>
+                <li><a href="#" target="_top">Level 3</a></li>
+            </ul>
+        </nav>
+        <header> <!--ReqH5-->
+            <h1>Exposing how JavaScript works</h1>
+        </header>
+        <main>
+            <section> <!--ReqH4-->
+                <article class="textArticle">
+                    <h2>¿Es javascript un lenguaje de programación? (si)</h2>
+                    <cite>"Si grazna como un pato, camina como un pato y nada como un pato, entonces probablemente sea un pato"</cites>
+                <p>Otro ejemplo: la famosa discursión entre Platón y Diógenes</p> 
+                    <div> <!--ReqH6-->  <!--ReqH7-->
+                        <!-- def element not llowed by w3c?? -->
+                        <em>Platón: </em><cite>Podemos definir al hombre como un bípedo sin plumas</cite> 
+                        <br>
+                        <em>Diógenes: </em><cite>"¡Aquí está el hombre de Platón!"</cite>
+                        <figure>
+                            <!--ReqH13--> <!--ReqH10--> <a href="https://es.wikipedia.org/wiki/Di%C3%B3genes_de_Sinope"><img alt="Diógenes sosteniendo una gallina desplumada" src="./resources/images/Diogenes.jpeg" width="300"></a>
+                            <figcaption>Diógenes sosteniendo a un hombre por el cuello</figcaption>
+                            <!--ReqH11--> <a href="./resources/images/Diogenes.jpeg" target="_parent">Abrir pestaña con esta foto</a>
+                        </figure>
+                    </div>
+                </article>
+                <article>
+                    <p>//Podemos observar una sintaxis muy distinta entre Java y JavaScript, a pesar de que Javascript tomó prestado su nombre de Java</p>
+                    <code> <!--ReqH7-->
+                        <br>public class Main {
+                        <br>&nbsp;public static void main(String[] args) {
+                        <br>&nbsp;&nbsp;System.out.println("Hello World");
+                        <br>&nbsp;}
+                        <br>}
+                    </code>
+                     <code> <!--ReqH7-->
+                        <br>&lt;script&gt;
+                        <br>&nbsp;console.log("Hello, World!");
+                        <br>&lt;/script&gt;
+                    </code>
+                </article>
+            </section>
+            <section>
+                <article class="textArticle loremIpsumArticle">
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                    <p>
+                        Fusce ipsum leo, molestie nec ipsum euismod, ullamcorper eleifend ex.
+                        Nunc fringilla felis et <!--ReqH6--> <strong>IMPORTANT</strong> nisl rutrum mollis.
+                        Nulla consectetur varius leo eleifend aliquam.
+                        Suspendisse in nunc eget urna molestie congue. 
+                    </p>
+                </article>
+            </section>
+            <section>
+                <a href="./pages/form.html">Formulario de contacto</a>
+            </section>
+        </main>
+        <footer>
+            <ul> <!--ReqH14-->
+                <li><a href="#">Social media 1</a></li>
+                <li><a href="#">Social media 2</a></li>
+                <li><a href="#">Social media 3</a></li>
+            </ul>
+        </footer>    
+    </body>
+</html>

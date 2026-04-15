@@ -1,0 +1,160 @@
+/* ReqC24 en varias reglas*/ 
+body{ 
+    font-family: monospace; /* ReqC1 */
+    background-color: #f7df1e; /* ReqS5 */
+}
+
+main{
+    width: 80vw;
+    text-align: center; /* ReqC4 */
+}
+
+h1{
+    font-size: 6em; /* ReqC3 */
+}
+
+h2{
+    font-size: 2em; /* ReqC3 */
+}
+
+h3{
+    font-size: 1.5em; /* ReqC3 */
+}
+
+a{
+    color: blue;
+    font-size: 1.2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+button, label{
+    margin: 0.5em 0;
+} 
+
+button, ul, code{ /* Ponemos las responsabilidades de estilo de nav y footer en las ul */ /* ReqC6 */
+    font-size: 1.5em; /* ReqC2 */  /* ReqC20 */
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 0.5em;
+    list-style-type: none;  /* ReqC16 */
+}
+
+li{
+    margin-right: 2em;
+    list-style-type: none;
+}
+
+button, li > a{ /* ReqC10 */ /* ReqS13 */  /* ReqC20 */
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+    padding: 0.1em 0.5em;
+}
+
+button:hover, li > a:hover{ /* ReqC14 */  /* ReqC20 */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+p::first-letter{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 2em;  /* ReqS7 */
+}
+
+section{
+    text-align: left;
+    margin-left:6em;
+}
+
+article{
+    padding: 1em 4em;
+}
+
+table th{ /* ReqC18 */
+    border: 0.2em solid black;
+    background-color: red;
+}
+
+table tr:nth-child(even) td{ /* ReqC18 */
+    border: 0.2em solid black;
+    background-color: blue;
+}
+
+table tr:nth-child(odd) td{ /* ReqC18 */
+    border: 0.2em solid black;
+    background-color: rgb(0, 255, 0);
+}
+
+caption{ /* ReqC17 */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 3em 0 1em 0;
+}
+
+code{  /* ReqC23 */
+    background-color: black;
+    color: white;
+    margin: 1em 0;
+}
+
+.textArticle{ /* ReqC8 */  /* ReqC23 */
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+.loremIpsumArticle p{  /* ReqC11 */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.loremIpsumArticle p ~ p{ /* ReqC12 */
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+@media (max-width:600px){ /* ReqC21 */ /*Vista para móviles*/
+    body{
+        font-size: 0.8em; 
+    }
+
+    h1{
+        font-size: 5em; 
+    }
+
+    code{
+        font-size: 1.2em;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    section{
+        margin: 0 3em;
+    }
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul > li{
+        margin: 0.5em 0;
+    }
+
+    figure{
+        margin: 0;
+    }
+    img{
+        width: 100%;
+        min-width: 200px;
+    }
+}

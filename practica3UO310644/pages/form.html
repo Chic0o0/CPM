@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--ReqH1-->
+<html lang="es-ES">
+    <head> <!--ReqH2-->
+        <title>JavaScript behind the scenes</title>
+        <meta charset="UTF-8">
+        <meta name="author">
+        <meta name="description">
+        <meta name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <script src="../js/myJS.js" defer></script>
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <!--ReqH16--> <!--ReqH17--> <!--ReqH18-->
+        <section>
+            <form name="formularioContacto" method="post" action="mailto:noexiste@uniovi.es" 
+            enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()" novalidate> <!--ReqJ4-->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" class="compulsory" required oninput="updatePreview(); checkValidityState(this)">
+            
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" class="compulsory" required oninput="updatePreview(); checkValidityState(this)">
+            
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="contrasenia" name="contrasenia" class="compulsory" required oninput="updatePreview(); checkValidityState(this)">
+            
+                <!--ReqH18-->
+                <label for="telefono">Teléfono (9 dígitos):</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    class="compulsory"
+                    name="telefono" 
+                    pattern="[0-9]{9}" 
+                    title="Debe introducir un número de 9 dígitos" 
+                    required
+                    oninput="updatePreview(); checkValidityState(this)"
+                    onkeydown="handlePhoneInput(event)" 
+                    >
+                    <!-- ReqJ7 -->
+                
+                <label for="ocupacion">Ocupación</label>
+                <select id="ocupacion" name="ocupacion" oninput="updatePreview(); checkValidityState(this)">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="desempleado">Desempleado</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <!--ReqH19-->
+                <label for="mensaje">Mensaje o comentarios:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30" oninput="updatePreview(); checkValidityState(this)"></textarea>
+            
+                <div id="errorBox" class="errorBox"> <!--ReqJ5-->
+                </div>
+
+                <button type="submit" >Enviar</button>
+                <button type="reset">Limpiar formulario</button>
+            </form>
+        </section>
+        <section onmouseenter="notifyCustomer()" > <!--ReqJ8-->
+            <h2>
+                Prev
+            </h2>
+            <div id="prev">
+                <p id="prevCont">
+                    Preview del formulario aqui
+                </p>
+            </div>
+        </section>
+    </body> <!--ReqH3-->
+</html>

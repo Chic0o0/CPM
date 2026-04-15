@@ -1,0 +1,26 @@
+input, textarea, select{
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+}
+
+.compulsory{
+    text-decoration:underline;  /* ReqC19 */
+}
+
+input.valid, textarea.valid, select.valid{ /* ReqJ3 */
+    border-color: green;
+    box-shadow: 0 0 0 3px rgba(0,128,0,1);
+    border-radius: 0.1em;
+}
+
+input.invalid, textarea.invalid, select.invalid{ /* ReqJ3 */
+    border-color: red;
+    box-shadow: 0 0 0 3px rgba(220,20,60,1);
+    border-radius: 0.1em;
+}
+
+.visible{
+    visibility: visible;
+    color: red;
+}
