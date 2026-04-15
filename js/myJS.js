@@ -62,7 +62,7 @@ function validateForm(event) {/* ReqJ4 */
         return false;
     }
 
-    sendSupbaseForm(errorBox);
+    sendSupabaseForm(errorBox);
     return true;
 }
 
