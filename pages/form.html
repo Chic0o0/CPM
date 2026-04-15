@@ -9,14 +9,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/form.css">
+        <script src=https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2></script>
         <script src="../js/myJS.js" defer></script>
     </head>
     <body>
         <h1>Formulario de contacto</h1>
         <!--ReqH16--> <!--ReqH17--> <!--ReqH18-->
         <section>
-            <form name="formularioContacto" method="post" action="mailto:noexiste@uniovi.es" 
-            enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()" novalidate> <!--ReqJ4-->
+            <form name="formularioContacto" method="post"
+            enctype="application/x-www-form-urlencoded" onsubmit="return validateForm(event)" novalidate> <!--ReqJ4-->
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" class="compulsory" required oninput="updatePreview(); checkValidityState(this)">
             
